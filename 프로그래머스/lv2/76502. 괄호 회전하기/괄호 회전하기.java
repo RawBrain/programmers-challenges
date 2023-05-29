@@ -35,7 +35,7 @@ class Solution {
                 answer++;
             }
         }
-        if(strarr[0].equals("(")&&strarr[1].equals("[")){
+        if(strarr[0].equals("(")&&strarr[1].equals("[")){ // sibal
             answer = 0;
         }
         return answer;
