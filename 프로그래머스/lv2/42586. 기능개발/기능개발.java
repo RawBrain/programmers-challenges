@@ -20,14 +20,7 @@ class Solution {
                 done[index]++;
         }
         
-        int[] answer = new int[index+1];
-        for(int i=0; i<done.length; i++){
-            if(done[i]!=0){
-                answer[i] = done[i];
-            }else{
-                break;
-            }
-        }
-        return answer;
+        
+        return Arrays.stream(done).filter(i -> i!=0).toArray();
     }
 }
