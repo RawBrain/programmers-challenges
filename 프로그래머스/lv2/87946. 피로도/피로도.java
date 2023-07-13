@@ -17,9 +17,7 @@ class Solution {
                 if(k >= dungeons[i][0]){
                     k-=dungeons[i][1];
                     visited[i] = true;
-                    count++;
-                    dfs(k, dungeons, visited, count);
-                    count--;
+                    dfs(k, dungeons, visited, count+1);
                     visited[i] = false;
                     k+=dungeons[i][1];
                 }
